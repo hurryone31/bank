@@ -1,0 +1,23 @@
+/* import stylesheets */
+
+@import url(main.css);
+@import url(header.css);
+@import url(footer.css);
+@import url(form.css);
+@import url(popup.css);
+/* / */
+html,body {
+    margin:0;
+    padding:0;
+    height:100%;
+}
+body {
+    display:flex;
+    flex-direction:column;
+}
+.fix-wid-con{
+    width:1000px;
+    margin:0 auto;
+    clear:both;
+}
+

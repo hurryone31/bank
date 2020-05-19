@@ -1,0 +1,21 @@
+{
+    "require-dev": {
+        "codeception/codeception": "^4.1",
+        "codeception/module-phpbrowser": "^1.0.0",
+        "codeception/module-asserts": "^1.0.0",
+        "squizlabs/php_codesniffer": "^3.5"
+    },
+    "autoload": {
+        "psr-0": {"common\\": "src/"}
+    },
+    "scripts" :{
+        "server": "php -S localhost:80",
+        "test": "codecept run --steps",
+        "phpcs": "phpcs --standard=PSR1 src/common/",
+        "phpcbf": "phpcbf / -p -v"
+    },
+    "require": {
+      "ext-mysqli": "*",
+        "phpmailer/phpmailer": "^6.1"
+    }
+}

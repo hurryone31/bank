@@ -1,0 +1,51 @@
+.popupWrap{
+    z-index: 1;
+    display:none;
+    position: fixed;
+    width:100%;
+    height:100%;
+    background-color:rgb(99, 117, 145);
+    background-color:rgba(99, 117, 145, 0.9);
+    margin: 0 auto;
+}
+.popupContent {
+    z-index: 1;
+    width:600px;
+    height:auto;
+    border:1px solid black;
+    border-radius:10px;
+    background-color:white;
+    overflow: auto;
+    clear:both;
+    margin:0 auto;
+    margin-top:50px;
+}
+.popupContent table{
+    width:94%;
+    margin-left:3%;
+
+}
+.popupContent table td{
+    width:20%;
+}
+#hrefWrap{
+    margin-left:10px;
+    width:auto;
+    height:auto;
+    clear:both;
+    padding-right:5px;
+}
+#hrefWrap a:visited{
+    text-decoration: none;
+    color: #1d334b;
+}
+.HrefDiv{
+    float:left;
+    margin-left:10px;
+}
+.popClose{
+    margin-left:auto;
+    margin-right:15px;
+    text-align:right;
+    margin-bottom: 3%;
+}
