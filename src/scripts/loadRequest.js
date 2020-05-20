@@ -33,8 +33,15 @@ function onLoad(data,term)
     data['fio'] = document.getElementById('4').value;
     data['tel'] = document.getElementById('5').value;
     data['term'] = document.getElementById('2').value;
-    if (openNTable(data,term) && mailGenerate(data)) {
-        alert('Данные загружены в базу, письмо отправлено. Спасибо!')
-    }
-
+    let promise = new Promise((resolve, reject) => {
+        openNTable(data,term);
+        resolve(data);
+    });
+    promise
+        .catch(error => alert('Заявка не отправлена, нет ответа сервера!'))
+        .then(result => {
+            mailGenerate(result);
+            alert('Заявка отправлена. Спасибо!')
+        })
+        .catch(error => alert('Заявка не отправлена: письмо не сгенерировано'));
 }

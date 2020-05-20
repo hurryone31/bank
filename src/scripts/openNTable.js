@@ -19,6 +19,5 @@ export function openNTable(somedata,term)
         });
     }
     loadTableinc(1,table,somedata, 1);
-    return(true);
 
 }

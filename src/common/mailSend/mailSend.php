@@ -28,4 +28,3 @@ $mail->Subject = 'Заявка на кредитование';
 $body = $current
 $mail->msgHTML($body);
 $mail->send();*/
-echo(true);

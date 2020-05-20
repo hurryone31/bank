@@ -13,6 +13,5 @@ export function mailGenerate(somedata)
         body: JSON.stringify(somedata)
     }).then(response => response.text())
         .then(data => mailSend(data))
-        .catch(error => console.log('письмо не сгенерировано.'));
-    return(true);
+        .catch(error => console.log('письмо не может быть сгенерировано.'));
 }
